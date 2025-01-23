@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Wrap</title>
+    <style>
+      .flex-container-nowrap {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: blue;
+      }
+
+      .flex-container-nowrap > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: blue;
+      }
+
+      .flex-container-wrap > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      
+      .flex-container-wrapr {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        background-color: blue;
+      }
+
+      .flex-container-wrapr > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flex-container-nowrap">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
+    </div>
+    <br />
+    <div class="flex-container-wrap">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
+    </div>
+    <br />
+    <div class="flex-container-wrapr">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
+    </div>
+  </body>
+</html>

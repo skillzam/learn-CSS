@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Flexbox</title>
+    <head>
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .flex-item-left {
+          background-color: teal;
+          padding: 10px;
+          flex: 50%;
+        }
+
+        .flex-item-right {
+          background-color: coral;
+          padding: 10px;
+          flex: 50%;
+        }
+
+        @media (max-width: 600px) {
+          .flex-container {
+            flex-direction: column;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="flex-container">
+        <div class="flex-item-left">Skillzam</div>
+        <div class="flex-item-right">Workzam</div>
+      </div>
+    </body>
+  </head>
+</html>

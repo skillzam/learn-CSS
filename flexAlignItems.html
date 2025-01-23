@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Flex Align Items</title>
+    <style>
+      .flex-container-alignCenter {
+        display: flex;
+        height: 200px;
+        align-items: center;
+        background-color: blue;
+      }
+
+      .flex-container-alignCenter > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+      .flex-container-alignStart {
+        display: flex;
+        height: 200px;
+        align-items: flex-start;
+        background-color: blue;
+      }
+
+      .flex-container-alignStart > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+      .flex-container-alignEnd {
+        display: flex;
+        height: 200px;
+        align-items: flex-end;
+        background-color: blue;
+      }
+
+      .flex-container-alignEnd > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+      .flex-container-alignStretch {
+        display: flex;
+        height: 200px;
+        align-items: stretch;
+        background-color: blue;
+      }
+
+      .flex-container-alignStretch > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+      .flex-container-alignBaseline {
+        display: flex;
+        height: 200px;
+        align-items: baseline;
+        background-color: blue;
+      }
+
+      .flex-container-alignBaseline > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container-alignCenter">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+    </div>
+    <br />
+    <div class="flex-container-alignStart">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+    </div>
+    <br />
+    <div class="flex-container-alignEnd">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+    </div>
+    <br />
+    <div class="flex-container-alignStretch">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+    </div>
+    <br />
+    <div class="flex-container-alignBaseline">
+      <div><h1>A</h1></div>
+      <div><h6>B</h6></div>
+      <div><h3>C</h3></div>
+      <div><small>D</small></div>
+    </div>
+    <br />
+    <div class="flex-container-jSpaceEvenly">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+    </div>
+  </body>
+</html>

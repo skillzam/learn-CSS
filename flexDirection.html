@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Flex Direction</title>
+
+    <style>
+      .flex-container-row {
+        display: flex;
+        flex-direction: row;
+        background-color: blue;
+      }
+
+      .flex-container-rowr {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: blue;
+      }
+
+      .flex-container-col {
+        display: flex;
+        flex-direction:column;
+        background-color: blue;
+      }
+
+      .flex-container-colr {
+        display: flex;
+        flex-direction:column-reverse;
+        background-color: blue;
+      }
+
+      .flex-container-row > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-col > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-rowr > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-colr > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body> 
+    <div class="flex-container-row">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+    </div>
+    <br>
+    <div class="flex-container-rowr">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+      </div>
+    <br>
+    <div class="flex-container-col">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+    <br>
+    <div class="flex-container-colr">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+  </body>
+</html>
