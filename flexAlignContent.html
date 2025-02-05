@@ -8,50 +8,261 @@
     , initial-scale=1.0"
     />
     <title>Flex Align Content</title>
-    <style> 
+    <style>
+      .flex-container-contentCenter {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: center;
+        overflow: scroll;
+        background-color: blue;
+      }
+
+      .flex-container-contentCenter > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-contentStretch {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: stretch;
+        overflow: scroll;
+        background-color: blue;
+      }
+
+      .flex-container-contentStretch > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-contentStart {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        overflow: scroll;
+        background-color: blue;
+      }
+
+      .flex-container-contentStart > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-contentEnd {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        overflow: scroll;
+        background-color: blue;
+      }
+
+      .flex-container-contentEnd > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-contentSpace {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-between;
+        overflow: scroll;
+        background-color: blue;
+      }
+
+      .flex-container-contentSpace > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-contentSpaceAround {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-around;
+        overflow: scroll;
+        background-color: blue;
+      }
+
+      .flex-container-contentSpaceAround > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-container-contentSpaceEvenly {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        overflow: scroll;
+        background-color: blue;
+      }
+
+      .flex-container-contentSpaceEvenly > div {
+        background-color: lightblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
     </style>
   </head>
   <body>
-    <div class="flex-container-alignCenter">
+    <div class="flex-container-contentCenter">
       <div>A</div>
       <div>B</div>
       <div>C</div>
       <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
     </div>
     <br />
-    <div class="flex-container-alignStart">
+    <div class="flex-container-contentStretch">
       <div>A</div>
       <div>B</div>
       <div>C</div>
       <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
     </div>
     <br />
-    <div class="flex-container-alignEnd">
+    <div class="flex-container-contentStart">
       <div>A</div>
       <div>B</div>
       <div>C</div>
       <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
     </div>
     <br />
-    <div class="flex-container-alignStretch">
+    <div class="flex-container-contentEnd">
       <div>A</div>
       <div>B</div>
       <div>C</div>
       <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
     </div>
     <br />
-    <div class="flex-container-alignBaseline">
-      <div><h1>A</h1></div>
-      <div><h6>B</h6></div>
-      <div><h3>C</h3></div>
-      <div><small>D</small></div>
-    </div>
-    <br />
-    <div class="flex-container-jSpaceEvenly">
+    <div class="flex-container-contentSpace">
       <div>A</div>
       <div>B</div>
       <div>C</div>
       <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
     </div>
+    <br /> 
+    <div class="flex-container-contentSpaceAround">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
+    </div>
+    <br /> 
+    <div class="flex-container-contentSpaceEvenly">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
+    </div>
+    <br />
   </body>
 </html>

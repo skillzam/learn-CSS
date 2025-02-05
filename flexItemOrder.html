@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Item Order</title>
+</head>
+  <style>
+      .flex-container {
+        display: flex;
+        align-items: stretch;
+        background-color: blue;
+      }
+
+      .flex-container>div {
+        background-color: lightblue;
+        color: black;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div style="order: 3">A</div>
+    <div style="order: 2">B</div>
+    <div style="order: 1">C</div>  
+    <div style="order: 4">D</div>  
+  </div>
+</body> 
+</html>

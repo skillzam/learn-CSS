@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Item Flex-Shrink</title>
+</head>
+  <style>
+        .flex-container {
+        display: flex;
+        align-items: stretch;
+        background-color: blue;
+        }
+
+        .flex-container>div {
+        background-color: lightblue;
+        color: black;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div style="flex-shrink: 0">E</div>
+    <div>F</div>
+    <div>G</div>
+    <div>H</div>
+    <div style="flex-shrink: 2">I</div>
+    <div>J</div>
+    <div>K</div>
+    <div>L</div>
+    <div>M</div>
+    <div>N</div>
+    <div>O</div>
+  </div>
+</body> 
+</html>
