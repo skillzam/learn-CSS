@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid place content</title>
+    <style>
+      .grid-container {
+        display: grid;
+        height: 400px;
+        place-content: center center;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        background-color: blue;
+      }
+
+      .grid-container > div {
+        background-color: lightblue;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+    </div>
+  </body>
+</html>

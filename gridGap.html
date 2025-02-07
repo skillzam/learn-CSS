@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Gap</title>
+    <style>
+      .container-columnGap {
+        display: grid;
+        column-gap: 60px;
+        grid-template-columns: auto auto auto;
+        background-color: blue;
+        padding: 10px;
+      }
+      .container-columnGap > div {
+        background-color: lightblue;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .container-rowGap {
+        display: grid;
+        row-gap: 60px;
+        grid-template-columns: auto auto auto;
+        background-color: blue;
+        padding: 10px;
+      }
+      .container-rowGap > div {
+        background-color: lightblue;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .container-gap {
+        display: grid;
+        gap: 60px 120px;
+        grid-template-columns: auto auto auto;
+        background-color: blue;
+        padding: 10px;
+      }
+      .container-gap > div {
+        background-color: lightblue;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-columnGap">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+    </div>
+    <br />
+    <div class="container-rowGap">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+    </div>
+    <br />
+    <div class="container-gap">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+    </div>
+    <br />
+  </body>
+</html>

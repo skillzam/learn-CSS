@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid - Named Areas</title>
+
+    <style>
+      .grid-layout {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar content"
+          "footer footer";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 10px;
+        background-color: #e9ecef;
+        padding: 10px;
+      }
+
+      .header {
+        grid-area: header;
+        background: #6c757d;
+        color: white;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background: #adb5bd;
+        height: 300px;
+      }
+      .content {
+        grid-area: content;
+        background: #ced4da;
+        height: 300px;
+      }
+      .footer {
+        grid-area: footer;
+        background: #6c757d;
+        color: white;
+      }
+
+      .grid-layout > div {
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <div class="header">Header</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="content">Content</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

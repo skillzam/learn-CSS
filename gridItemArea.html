@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Item Area</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: blue;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        background-color: lightblue;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+
+      #elementE {
+        grid-area: 2 / 1 / span 2 / span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div id="elementA">A</div>
+      <div id="elementB">B</div>
+      <div id="elementC">C</div>
+      <div id="elementD">D</div>
+      <div id="elementE">E</div>
+      <div id="elementF">F</div>
+      <div id="elementG">G</div>
+      <div id="elementH">H</div>
+      <div id="elementI">I</div>
+      <div id="elementJ">J</div>
+      <div id="elementK">K</div>
+    </div>
+  </body>
+</html>
